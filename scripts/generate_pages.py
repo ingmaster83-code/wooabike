@@ -175,8 +175,7 @@ def region_page(region, cities, depth):
     </div>
   </div>
   <div class="region-aside">
-    <div id="region-map"><div class="map-placeholder"><div class="icon">🗺️</div><p>지도 로딩 중...</p></div></div>
-    <div class="mid-ad" style="margin-top:16px;min-height:600px;">
+    <div class="mid-ad" style="min-height:600px;">
       <div class="ad-label">📢 광고</div>
       <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
            data-ad-client="ca-pub-6464921081676309" data-ad-slot="6255378195"></ins>
@@ -298,8 +297,7 @@ def city_page(region, city, records):
     </div>
   </div>
   <div class="region-aside">
-    <div id="region-map"><div class="map-placeholder"><div class="icon">🗺️</div><p>지도 로딩 중...</p></div></div>
-    <div class="mid-ad" style="margin-top:16px;min-height:600px;">
+    <div class="mid-ad" style="min-height:600px;">
       <div class="ad-label">📢 광고</div>
       <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
            data-ad-client="ca-pub-6464921081676309" data-ad-slot="6255378195"></ins>
