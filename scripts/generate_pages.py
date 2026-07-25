@@ -361,6 +361,7 @@ def index_page():
   <meta name="description" content="전국 {TOTAL:,}개 공공자전거 대여소 위치와 요금을 한눈에 확인하세요. 무료·유료 대여소, 무인·유인 대여소를 지역별로 검색할 수 있습니다.">
   <meta name="keywords" content="자전거 대여소,공공자전거,따릉이,자전거 대여,전국 자전거 대여소,무료 자전거">
   <meta name="robots" content="index, follow">
+  <meta name="naver-site-verification" content="13c72c24b403c43188cd4220f66892cbb603f711" />
   <link rel="canonical" href="https://wooabike.wooahouse.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="전국 자전거 대여소 찾기 | 우아자전거">
@@ -393,23 +394,49 @@ def index_page():
   </div>
 </section>
 
-<section class="section" style="max-width:1100px;margin:0 auto;padding:40px 20px;">
-  <h2 class="section-title" style="text-align:center;margin-bottom:24px;">📍 지역별로 찾기</h2>
-  <div class="region-grid">
-    {cards_html}
-  </div>
-</section>
+<div class="main-layout">
+  <div class="main-col">
+    <div class="tab-bottom-ad">
+      <ins class="adsbygoogle" style="display:inline-block;width:728px;max-width:100%;height:90px"
+           data-ad-client="ca-pub-6464921081676309" data-ad-slot="7080296704"></ins>
+    </div>
 
-<section class="seo-intro" style="max-width:900px;margin:0 auto;padding:20px 20px 60px;">
-  <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:16px;">우아자전거 — 전국 공공자전거 대여소 정보</h2>
-  <p style="color:var(--text-muted);font-size:.9rem;line-height:1.9">
-    <strong>우아자전거</strong>는 전국 지자체가 운영하는 공공자전거 대여소 위치, 요금, 운영시간을 한곳에서 검색할 수 있는 무료 서비스입니다.
-    무인 대여소와 유인 대여소, 무료 대여소와 유료 대여소를 구분해서 확인할 수 있고,
-    각 대여소의 정확한 주소와 지도, 길찾기까지 바로 연결됩니다.
-    <br><br>
-    서울·경기·인천 등 수도권부터 강원·충청·전라·경상·제주까지 전국 17개 시도의 자전거 대여소 정보를 지역별로 모아 확인하세요.
-  </p>
-</section>
+    <section class="section">
+      <h2 class="section-title" style="text-align:center;margin-bottom:24px;">📍 지역별로 찾기</h2>
+      <div class="region-grid">
+        {cards_html}
+      </div>
+    </section>
+
+    <section class="seo-intro">
+      <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:16px;">우아자전거 — 전국 공공자전거 대여소 정보</h2>
+      <p style="color:var(--text-muted);font-size:.9rem;line-height:1.9">
+        <strong>우아자전거</strong>는 전국 지자체가 운영하는 공공자전거 대여소 위치, 요금, 운영시간을 한곳에서 검색할 수 있는 무료 서비스입니다.
+        무인 대여소와 유인 대여소, 무료 대여소와 유료 대여소를 구분해서 확인할 수 있고,
+        각 대여소의 정확한 주소와 지도, 길찾기까지 바로 연결됩니다.
+        <br><br>
+        서울·경기·인천 등 수도권부터 강원·충청·전라·경상·제주까지 전국 17개 시도의 자전거 대여소 정보를 지역별로 모아 확인하세요.
+      </p>
+    </section>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-box">
+      <h3>💡 우아자전거란?</h3>
+      <ul>
+        <li>🚲 지자체가 운영하는 공공자전거</li>
+        <li>💰 무료 · 유료 대여소 구분</li>
+        <li>🙋 유인 · 무인 대여소 구분</li>
+        <li>⏰ 운영시간 내 대여 가능</li>
+        <li>📍 전국 약 {TOTAL:,}개소</li>
+      </ul>
+    </div>
+    <div class="sidebar-ad">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
+           data-ad-client="ca-pub-6464921081676309" data-ad-slot="6255378195"></ins>
+    </div>
+  </aside>
+</div>
 
 <footer class="site-footer">
   <div class="footer-inner">
@@ -432,6 +459,7 @@ def index_page():
   }}
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
 </body>
 </html>"""
 
