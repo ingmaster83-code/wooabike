@@ -208,7 +208,7 @@ def region_page(region, cities, depth):
 </script>
 <script src="{up}js/region.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
-<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+<script>document.querySelectorAll('ins.adsbygoogle').forEach(function(){{(adsbygoogle=window.adsbygoogle||[]).push({{}});}});</script>
 </body>
 </html>"""
     return html
@@ -332,7 +332,7 @@ def city_page(region, city, records):
 </script>
 <script src="../../js/region.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
-<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+<script>document.querySelectorAll('ins.adsbygoogle').forEach(function(){{(adsbygoogle=window.adsbygoogle||[]).push({{}});}});</script>
 </body>
 </html>"""
     return html
@@ -457,7 +457,7 @@ def index_page():
   }}
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
-<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+<script>document.querySelectorAll('ins.adsbygoogle').forEach(function(){{(adsbygoogle=window.adsbygoogle||[]).push({{}});}});</script>
 </body>
 </html>"""
 

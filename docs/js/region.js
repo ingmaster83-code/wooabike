@@ -7,7 +7,19 @@ let kakaoLoaded = false;
 let allRecords = [];
 let currentTab = '전체';
 let shownCount = 0;
+let inlineAdsPushed = 0;
 const PAGE = 50;
+
+// push() 1회는 미처리 ins 태그 1개만 채우므로, 새로 삽입된 인라인 광고 개수만큼 반복 호출
+function pushNewInlineAds() {
+  const listEl = document.getElementById('parkingList');
+  if (!listEl) return;
+  const total = listEl.querySelectorAll('ins.adsbygoogle').length;
+  for (let i = inlineAdsPushed; i < total; i++) {
+    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+  }
+  inlineAdsPushed = total;
+}
 
 // ── Kakao SDK 로드 ───────────────────────────────
 function loadKakaoSDK() {
@@ -209,6 +221,8 @@ function renderList(records) {
 
   if (countEl) countEl.textContent = records.length.toLocaleString();
 
+  inlineAdsPushed = 0;
+
   if (records.length === 0) {
     listEl.innerHTML = '<div class="empty-state"><div class="ei">🚲</div><p>해당 구분의 대여소가 없습니다.</p></div>';
     if (loadMoreWrap) loadMoreWrap.style.display = 'none';
@@ -231,7 +245,7 @@ function renderList(records) {
         if (shownCount >= records.length) loadMoreWrap.style.display = 'none';
         else loadMoreBtn.textContent = `더 보기 (${(records.length - shownCount).toLocaleString()}개 남음)`;
         bindCardEvents(listEl, records);
-        try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+        pushNewInlineAds();
       };
     } else {
       loadMoreWrap.style.display = 'none';
@@ -239,7 +253,7 @@ function renderList(records) {
   }
 
   bindCardEvents(listEl, records);
-  try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+  pushNewInlineAds();
 }
 
 function bindCardEvents(listEl, records) {
