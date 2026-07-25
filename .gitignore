@@ -1,0 +1,4 @@
+scripts/_bike_raw.json
+__pycache__/
+*.pyc
+.env
