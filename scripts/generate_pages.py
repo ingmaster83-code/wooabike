@@ -365,6 +365,7 @@ def index_page():
   <meta property="og:title" content="전국 자전거 대여소 찾기 | 우아자전거">
   <meta property="og:description" content="전국 {TOTAL:,}개 공공자전거 대여소 위치와 요금을 한눈에">
   <meta property="og:url" content="https://wooabike.wooahouse.com/">
+  <meta property="og:image" content="https://wooabike.wooahouse.com/og-image.png">
   <meta name="twitter:card" content="summary">
   {HEAD_STYLE}
   <link rel="stylesheet" href="css/style.css">
