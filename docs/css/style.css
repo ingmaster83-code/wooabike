@@ -632,3 +632,13 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .region-card-count { font-size: .82rem; color: var(--primary); font-weight: 700; }
 
 .seo-intro { background: var(--bg); border-top: 1px solid var(--border); }
+
+/* 우아동네 교차링크 */
+.crosslink-box { margin: 16px 0 8px; }
+.crosslink-link {
+  display: block; text-align: center; padding: 12px 16px;
+  border: 1px dashed var(--border); border-radius: var(--radius);
+  color: var(--text-muted); font-size: .85rem; font-weight: 600;
+  text-decoration: none; transition: all .2s;
+}
+.crosslink-link:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }

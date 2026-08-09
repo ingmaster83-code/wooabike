@@ -190,6 +190,12 @@ def region_page(region, cities, depth):
   지도보기·길찾기 버튼으로 바로 이동하세요.</p>
 </section>
 
+<div class="crosslink-box">
+  <a href="https://wooatown.wooahouse.com/지역/{esc(short)}.html" target="_blank" rel="noopener" class="crosslink-link">
+    🏠 {esc(short)} 다른 생활정보 보기 (우아동네) →
+  </a>
+</div>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-grid">
@@ -312,6 +318,12 @@ def city_page(region, city, records):
   지도보기·길찾기 버튼으로 바로 이동하세요.
   {esc(region)} 전체 목록은 <a href="../{esc(region)}.html">{esc(region)} 대여소 페이지</a>에서 확인하세요.</p>
 </section>
+
+<div class="crosslink-box">
+  <a href="https://wooatown.wooahouse.com/지역/{esc(short)}.html" target="_blank" rel="noopener" class="crosslink-link">
+    🏠 {esc(short)} 다른 생활정보 보기 (우아동네) →
+  </a>
+</div>
 
 <footer class="site-footer">
   <div class="footer-inner">
